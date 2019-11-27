@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<!-- NAV BAR COMPONENT -->
+<header class="nav-bar flex">
+    <div class="nav-bar-block flex flex_vertical-centered">
+        <a class="nav-bar__header" href="index.html">The Journal</a>
+        <input class="nav-bar__input" type="text" placeholder="Search for article here">
+        <button class="btn nav-bar__btn nav-bar__btn_search"></button>
+    </div>
+    <div class="nav-bar-block flex flex_vertical-centered">
+        <a class="btn nav-bar__btn nav-bar__btn_login" href="auth.html"></a>
+    </div>
+</header>
+
+<section class="container">
+    <div class="container__block">
+        <h1 class="page-name page-name_centered">Registration</h1>
+        <form class="form">
+            <label>Login
+                <input type="text">
+            </label>
+            <label>Name
+                <input type="email">
+            </label>
+            <label>Password
+                <input type="password">
+            </label>
+            <label>Repeat password
+                <input type="password">
+            </label>
+            <input class="btn btn_accented btn_margined" type="submit" value="Register">
+        </form>
+    </div>
+    <div class="container__block container__block_bordered">
+        <h1 class="page-name page-name_centered">Authorization</h1>
+        <form class="form">
+            <label>Login
+                <input type="text">
+            </label>
+            <label>Password
+                <input type="password" >
+            </label>
+            <input class="btn btn_accented btn_margined" type="submit" value="Login">
+        </form>
+    </div>
+</section>
+
+</body>
+</html>

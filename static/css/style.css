@@ -1,0 +1,336 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+
+    font-family: sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex_vertical-centered {
+    align-items: center;
+}
+
+.flex_horizontal-centered {
+    justify-content: center;
+}
+
+
+/* NAV BAR COMPONENT */
+.nav-bar {
+    width: 100%;
+
+    justify-content: space-between;
+
+    background-color: rgba(58, 91, 140, 0.75);
+}
+
+.nav-bar:first-child {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.nav-bar-block {
+    padding: 12px 16px;
+}
+
+.nav-bar__header {
+    padding-left: 12px;
+    padding-right: 4px;
+
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar__header:visited {
+    color: black;
+}
+
+.nav-bar__input {
+    margin: 0 12px;
+    padding: 8px;
+
+    border-radius: 4px;
+    border: none;
+
+    min-width: 16vw;
+}
+
+.nav-bar__input::placeholder {
+    font-size: 0.75rem;
+}
+
+.nav-bar__input:focus {
+    outline: none;
+    box-shadow: 0 0 4px black;
+}
+
+.btn {
+    background: transparent;
+    border: none;
+}
+
+.nav-bar__btn {
+    width: 24px;
+    height: 24px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.nav-bar__btn_search {
+    background: url('../img/icons/search.png') no-repeat;
+}
+
+.nav-bar__btn_login {
+    background: url('../img/icons/login.png') no-repeat;
+}
+
+
+.container {
+    margin: 0 32px;
+
+    display: flex;
+}
+
+.container__block {
+    width: 100%;
+}
+
+.container__block_left {
+    width: fit-content;
+    max-width: 64%;
+
+    padding-right: 4%;
+    padding-bottom: 32px;
+}
+
+.container__block_right {
+    padding-left: 4%;
+
+    width: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container__block_bordered {
+    border-left: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    font-size: 2.5rem;
+
+    margin: 24px 32px;
+}
+
+
+h2 {
+    margin-top: 0;
+}
+
+.posts {
+    width: fit-content;
+
+    display: inline-block;
+}
+
+.posts .post {
+    margin: 16px 0;
+}
+
+.posts .post:first-child {
+    margin-top: 0;
+}
+
+.posts .post:last-child {
+    margin-bottom: 0;
+}
+
+.post {
+    background: rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+
+    padding: 16px;
+}
+
+.post__header {
+    margin-bottom: 1em;
+}
+
+.post__footer {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 1em;
+}
+
+.plus, .minus {
+    color: #EA981E;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1rem;
+
+    padding: 0 4px;
+}
+
+a {
+    color: #3A5B8C;
+    font-style: italic;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #313662;
+}
+
+.post-tags a {
+    margin: 12px 0;
+}
+
+.post-tags a:first-child {
+    margin-left: 0;
+}
+
+.post-tags a:last-child {
+    margin-right: 0;
+}
+
+.btn_accented {
+    background: rgba(234, 152, 30, 0.75);
+    color: white;
+
+    font-size: 1.75rem;
+    font-family: sans-serif;
+    font-style: unset;
+
+    text-align: center;
+
+    padding: 8px 16px;
+
+    width: 100%;
+    max-width: 280px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.50);
+}
+
+.btn_accented:hover {
+    background: rgba(234, 152, 30, 0.9);
+}
+
+.btn_accented:visited {
+    color:white;
+}
+
+.container__block_right h2 {
+    font-size: 2rem;
+
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+.tags {
+    max-height: 300px;
+
+    font-size: 1.5rem;
+
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tags a {
+    margin: 0 8px;
+
+    text-decoration: underline;
+}
+
+.page-name_centered {
+    margin: 48px 32px;
+
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form label {
+    width: 80%;
+    max-width: 480px;
+
+    margin: 16px;
+
+    font-weight: bold;
+}
+
+.form_profile label {
+    width: 100%;
+}
+
+label input {
+    width: 100%;
+    min-height: 2.75rem;
+
+    margin-top: 8px;
+
+    background: rgba(0, 0, 0, 0.08);
+    border: none;
+    border-radius: 8px;
+
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 3px rgba(58, 91, 140, 0.75);
+}
+
+.btn_margined {
+    margin-top: 32px;
+}
+
+.avatar {
+    width: 280px;
+
+    border-radius: 16px;
+
+    margin-bottom: 32px;
+}
+
+.page-name_tag {
+    display: inline-block;
+}
+
+.selected-tag {
+    font-size: 40px;
+}
+
+.text {
+    min-height: 240px;
+    height: 64vh;
+
+    width: 100%;
+}
+
+.form_article {
+    width: 50vw;
+}
+
+.form_article label {
+    width: 100%;
+}
